@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*-----Hero section----*/
+
+#hero-section {
+    --bs-gutter-x: 0;
+}
+
+#hero-image {
+    width: 100vw;
+}
