@@ -27,6 +27,27 @@
 }
 
 
+
+
+/*----Footer----*/
+footer{
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#social-links {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#social-links > li {
+    margin: 0 5px;
+}
+
 /*----Collapsed nav-bar----*/
 
 @media (max-width: 992px) {
@@ -35,9 +56,8 @@
     }
 
     #navbarTogglerDemo02 {
-        display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: flex-start; 
         margin-left: 0.2rem;
     }
 }
