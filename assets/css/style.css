@@ -59,6 +59,24 @@
     width: 75%;
 }
 
+/*----About Cards----*/
+#about-page-text {
+
+}
+
+.about-card {
+    height: 250px;
+}
+
+/*----About footer image----*/
+#about-footer-image {
+    height: 300px;
+    background-image: url(../images/hero-placeholder.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 /*----Footer----*/
 footer {
     margin: 10px 0;
@@ -93,10 +111,6 @@ footer {
         margin-left: 0.2rem;
     }
 
-    #home-about-p {
-        margin-left: 12.5%;
-    }
-
     /*----Home Contact Form----*/
     #home-contact-form {
         margin-left: 0;
@@ -105,5 +119,16 @@ footer {
 
     #home-contact-form-inputs {
         flex-direction: column;
+    }
+
+    #home-text-area-input, 
+    #home-personal-details-inputs {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    /*----About Cards----*/
+    .about-card {
+        width: 50%;
     }
 }
