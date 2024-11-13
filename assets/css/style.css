@@ -32,13 +32,6 @@
     text-align: center;
 }
 
-/* .modal-form-input {
-    height: 33.33%;
-} */
-
-.modal-form-col {
-
-}
 
 /*-----Hero section----*/
 
@@ -74,7 +67,7 @@
 
 /*----About page main----*/
 #about-page-text {
-    margin-left: 12.5%;
+    width: 75%;
 }
 
 /*----About footer image----*/
