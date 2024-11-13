@@ -44,21 +44,66 @@
                     <i class="bi bi-basket2-fill" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
                 </div>
 
+                <!------Modal---------->
                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                     aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Purchace Gift Card</h1>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                     aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                ...
+                                <form class="container mt-2 pb-2">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <!-- Create a CSS Grid for the form inputs -->
+                                            <div class="row g-3">
+                                                <!-- Left Column: Quantity, Cardholder Name, Card Number -->
+                                                <div class="col-md-6 d-grid">
+                                                    <div class="modal-form-input">
+                                                        <label for="quantity" class="form-label">Quantity</label>
+                                                        <input type="number" class="form-control" id="quantity" placeholder="Enter quantity">
+                                                    </div>
+                                                    <div class="modal-form-input">
+                                                        <label for="cardholderName" class="form-label">Cardholder Name</label>
+                                                        <input type="text" class="form-control" id="cardholderName" placeholder="Enter cardholder name">
+                                                    </div>
+                                                    <div class="modal-form-input">
+                                                        <label for="cardNumber" class="form-label">Card Number</label>
+                                                        <input type="text" class="form-control" id="cardNumber" placeholder="XXXX-XXXX-XXXX-XXXX">
+                                                    </div>
+                                                </div>
+                            
+                                                <!-- Right Column: Value, Total Price, and Purchase Button -->
+                                                <div class="col-md-6 d-grid">
+                                                    <div class="modal-form-input align-self-end">
+                                                        <!-- <label for="value" class="form-label">Value</label> -->
+                                                        <div class="input-group mb-3 align-self-end">
+                                                            <span class="input-group-text">€</span>
+                                                            <input type="text" class="form-control" id="value" placeholder="Enter value">
+                                                        </div>
+                                                    </div>
+                                                    <div class="modal-form-input align-self-end">
+                                                        <!-- <label for="totalPrice" class="form-label">Total Price</label> -->
+                                                        <div class="input-group mb-3">
+                                                            <span class="input-group-text">€</span>
+                                                            <input type="text" disabled class="form-control" id="totalPrice" placeholder="Total price">
+                                                        </div>
+                                                    </div>
+                                                    <!-- Align Purchase button with the bottom of the left inputs -->
+                                                    <div class="modal-form-input align-self-end">
+                                                        <button type="submit" class="btn btn-primary w-100">Purchase</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
+                            
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Save changes</button>
                             </div>
                         </div>
                     </div>
@@ -124,8 +169,8 @@
                 </div>
         </section>
         <section>
-            <div class="row d-flex justify-content-center"><iframe width="90%" height="600" frameborder="0" scrolling="no" marginheight="0"
-                    marginwidth="0"
+            <div class="row d-flex justify-content-center"><iframe width="90%" height="600" frameborder="0"
+                    scrolling="no" marginheight="0" marginwidth="0"
                     src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=County%20Hall,County%20Hall,%20Main%20St,%20Swords%20Demesne,%20Swords,%20Co.%20Dublin,%20K67%20X8Y2+(Fingal%20Tourism%20Office)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a
                         href="https://www.gps.ie/">gps vehicle tracker</a></iframe></div>
         </section>
