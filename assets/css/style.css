@@ -82,6 +82,17 @@
     padding: 20px;
 }
 
+
+/*----Contact Details----*/
+.contact-details-p {
+    margin-bottom: 0;
+}
+
+#contact-details {
+    width: 75%;
+}
+
+
 /*----Footer----*/
 footer {
     margin: 10px 0;
@@ -100,6 +111,7 @@ footer {
 #social-links>li {
     margin: 0 5px;
 }
+
 
 /*----Media Queries----*/
 
@@ -136,4 +148,5 @@ footer {
     .about-card {
         width: 50%;
     }
+
 }
