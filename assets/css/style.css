@@ -3,10 +3,9 @@
     padding: 0;
 }
 
-
-.row {
+/* .row {
     margin-right: 0;
-}
+} */
 
 /*----Nav bar----*/
 
@@ -59,6 +58,10 @@
     width: 75%;
 }
 
+/*----About page main----*/
+#about-page-text {
+    margin-left: 12.5%;
+}
 
 /*----About footer image----*/
 #about-footer-image {
@@ -89,7 +92,7 @@
 }
 
 #contact-details {
-    width: 75%;
+    width: 50%;
 }
 
 
@@ -138,7 +141,7 @@ footer {
         flex-direction: column;
     }
 
-    #home-text-area-input, 
+    #home-text-area-input,
     #home-personal-details-inputs {
         margin-left: 0 !important;
         margin-right: 0 !important;
@@ -149,4 +152,15 @@ footer {
         width: 50%;
     }
 
+    /*----About page main----*/
+    #about-page-text {
+        margin-left: 8.33%;
+    }
+
+
+
+    ----Contact Details----
+     #contact-details {
+        width: 75%;
+    }
 }
