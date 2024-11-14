@@ -45,62 +45,76 @@
             </div>
 
             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="exampleModalLabel">Purchace Gift Card</h1>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <form class="container mt-2 pb-2">
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <div class="row g-3">
-                                                <div class="col-md-6 d-grid">
-                                                    <div class="modal-form-input">
-                                                        <label for="quantity" class="form-label">Quantity</label>
-                                                        <input type="number" class="form-control" id="quantity" placeholder="Enter quantity">
-                                                    </div>
-                                                    <div class="modal-form-input">
-                                                        <label for="cardholderName" class="form-label">Cardholder Name</label>
-                                                        <input type="text" class="form-control" id="cardholderName" placeholder="Enter cardholder name">
-                                                    </div>
-                                                    <div class="modal-form-input">
-                                                        <label for="cardNumber" class="form-label">Card Number</label>
-                                                        <input type="text" class="form-control" id="cardNumber" placeholder="XXXX-XXXX-XXXX-XXXX">
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Purchase Gift Card</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form id="purchase-form" class="container mt-2 pb-2">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="row g-3">
+                                            <div class="col-md-6 d-grid">
+                                                <div class="modal-form-input">
+                                                    <label for="quantity" class="form-label">Quantity</label>
+                                                    <input type="number" class="form-control" id="quantity" min="1"
+                                                        placeholder="Enter quantity" required>
+                                                </div>
+                                                <div class="modal-form-input">
+                                                    <label for="cardholderName" class="form-label">Cardholder
+                                                        Name</label>
+                                                    <input type="text" class="form-control" id="cardholderName"
+                                                        placeholder="Enter cardholder name" required>
+                                                </div>
+                                                <div class="modal-form-input">
+                                                    <label for="cardNumber" class="form-label">Card Number</label>
+                                                    <input type="text" class="form-control" id="cardNumber"
+                                                        placeholder="XXXX-XXXX-XXXX-XXXX" maxlength="19"
+                                                        pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}" required>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-6 d-grid">
+                                                <div class="modal-form-input">
+                                                    <label for="email" class="form-label">Email</label>
+                                                    <div class="input-group">
+                                                        <input type="email" class="form-control" id="email"
+                                                            placeholder="Email" required>
                                                     </div>
                                                 </div>
-                            
-                                                <div class="col-md-6 d-grid">
-                                                    <div class="modal-form-input align-self-end">
-                                                        <div class="input-group mb-3 align-self-end">
-                                                            <span class="input-group-text">€</span>
-                                                            <input type="text" class="form-control" id="value" placeholder="Enter value">
-                                                        </div>
+                                                <div class="modal-form-input">
+                                                    <label for="value" class="form-label">Card Value</label>
+                                                    <div class="input-group">
+                                                        <span class="input-group-text">€</span>
+                                                        <input type="number" min="5" step="5" class="form-control"
+                                                            id="value" placeholder="Enter value" required>
                                                     </div>
-                                                    <div class="modal-form-input align-self-end">
-                                                        <div class="input-group mb-3">
-                                                            <span class="input-group-text">€</span>
-                                                            <input type="text" disabled class="form-control" id="totalPrice" placeholder="Total price">
-                                                        </div>
-                                                    </div>
-                                                    <div class="modal-form-input align-self-end">
-                                                        <button type="submit" class="btn btn-primary w-100">Purchase</button>
+                                                </div>
+                                                <div class="modal-form-input">
+                                                    <label for="totalPrice" class="form-label">Total Price</label>
+                                                    <div class="input-group">
+                                                        <span class="input-group-text">€</span>
+                                                        <input type="text" class="form-control" id="totalPrice" disabled
+                                                            placeholder="Total price">
                                                     </div>
                                                 </div>
                                             </div>
+                                            <div class="modal-form-input align-self-end">
+                                                <button type="submit" class="btn btn-primary w-100">Purchase</button>
+                                            </div>
                                         </div>
                                     </div>
-                                </form>
-                            </div>
-                            
-                            <div class="modal-footer">
-                            </div>
+                                </div>
+                            </form>
                         </div>
                     </div>
+                    <div class="modal-footer">
+                    </div>
                 </div>
+            </div>
         </div>
     </div>
 </nav>
