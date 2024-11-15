@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover Swords, a vibrant town north of Dublin, blending historic charm, modern shopping, and community spirit. Explore now!">
+    <meta name="keywords" content="Swords, Dublin, Ireland, historic sites, shopping, gift cards, travel, tourism">
+    <meta name="author" content="Visit Swords">
     <title>Home | Visit Swords
     </title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -16,7 +19,7 @@
 <body>
 
     <!--Nav-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
             <a class="navbar-brand col-4" href="index.html">Logo</a>
             <button class="navbar-toggler" id="collapse-button" type="button" data-bs-toggle="collapse"
@@ -60,7 +63,7 @@
                                     <div class="row">
                                         <div class="col-md-12">
                                             <div class="row g-3">
-                                                <div class="col-md-6 d-grid">
+                                                <div class="col-md-6 d-grid p-2">
                                                     <div class="modal-form-input">
                                                         <label for="quantity" class="form-label">Quantity</label>
                                                         <input type="number" class="form-control" id="quantity" min="1"
@@ -80,7 +83,7 @@
                                                     </div>
                                                 </div>
 
-                                                <div class="col-md-6 d-grid">
+                                                <div class="col-md-6 d-grid p-2">
                                                     <div class="modal-form-input">
                                                         <label for="email" class="form-label">Email</label>
                                                         <div class="input-group">
@@ -137,8 +140,8 @@
                 <h5 id="hero-gift-card-text" data-bs-toggle="modal" data-bs-target="#exampleModal" class="pt-1 ps-5">
                     Purchase a Swords Village Gift Card >></h5>
             </div>
-            <div id="scroller-arrow" class="d-flex align-items-end mb-2 fs-1">
-                <a href="#home-about-section"><i class="bi bi-chevron-double-down"></i></a>
+            <div class="d-flex align-items-end mb-2 fs-1">
+                <a id="scroller-arrow" href="#home-about-section"><i class="bi bi-chevron-double-down"></i></a>
             </div>
         </section>
 
@@ -152,11 +155,11 @@
             </p>
         </section>
 
-        <section id="home-cards-section" class="pt-5">
+        <section id="home-cards-section" class="pt-5 light-blue">
             <div class="row pt-5">
                 <div class="col-12 col-md-4 text-center d-flex justify-content-center" data-aos="fade-up">
                     <div class="card d-flex justify-content-center mb-5" style="width: 18rem;">
-                        <img src="assets/images/thumbnail-placeholder-.jpg" class="card-img-top" alt="...">
+                        <img src="assets/images/swords-church.jpg" class="card-img-top home-card-img" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">History</h5>
                             <p class="card-text">Discover Swords’ rich past, from ancient castles and heritage sites to tales of Ireland’s storied history woven into every corner.</p>
@@ -166,7 +169,7 @@
                 </div>
                 <div class="col-12 col-md-4 text-center d-flex justify-content-center" data-aos="fade-up">
                     <div class="card d-flex justify-content-center mb-5" style="width: 18rem;">
-                        <img src="assets/images/thumbnail-placeholder-.jpg" class="card-img-top" alt="...">
+                        <img src="assets/images/pavilions thumbnail.jpg" class="card-img-top home-card-img" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Shopping</h5>
                             <p class="card-text">Explore shopping destinations in Swords, from high-street brands to local boutiques, offering something special for everyone.</p>
@@ -176,7 +179,7 @@
                 </div>
                 <div class="col-12 col-md-4 text-center d-flex justify-content-center" data-aos="fade-up">
                     <div class="card d-flex justify-content-center mb-5" style="width: 18rem;">
-                        <img src="assets/images/thumbnail-placeholder-.jpg" class="card-img-top" alt="...">
+                        <img src="assets/images/gift-card.jpg" class="card-img-top home-card-img" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Gift Card</h5>
                             <p class="card-text">Treat someone to a memorable experience in Swords with gift cards for shopping, dining, and local attractions.</p>
@@ -188,7 +191,7 @@
             </div>
         </section>
 
-        <section class="d-flex flex-column text-center align-items-center">
+        <section class="d-flex flex-column text-center align-items-center mb-3">
             <h1 class="mt-3">Contact Us</h1>
             <form id="home-contact-form">
                 <div id="home-contact-form-inputs" class="d-flex mb-3">
