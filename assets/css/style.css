@@ -29,6 +29,10 @@ nav {
     background-color: white;
 }
 
+#logo {
+    height: 25px;
+}
+
 footer {
     background-color: rgba(159, 192, 224, 0.25);
     margin: 0 !important;

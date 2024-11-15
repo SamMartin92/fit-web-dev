@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Discover Swords, a vibrant town north of Dublin, blending historic charm, modern shopping, and community spirit. Explore now!">
+    <meta name="description"
+        content="Discover Swords, a vibrant town north of Dublin, blending historic charm, modern shopping, and community spirit. Explore now!">
     <meta name="keywords" content="Swords, Dublin, Ireland, historic sites, shopping, gift cards, travel, tourism">
     <meta name="author" content="Visit Swords">
     <title>Contact | Visit Swords
@@ -19,7 +20,8 @@
     <!--Nav-->
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
-            <a class="navbar-brand col-4" href="index.html">Logo</a>
+            <a class="navbar-brand col-4" href="index.html"><img id="logo" src="assets/images/visit-swords-logo.png"
+                    alt="Visit Swords Logo"></a>
             <button class="navbar-toggler" id="collapse-button" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -28,7 +30,7 @@
             <div class="collapse navbar-collapse col-4" id="navbarTogglerDemo02">
                 <ul id="nav-list" class="navbar-nav mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="about.html">About</a>
@@ -40,14 +42,13 @@
                         <a class="nav-link" href="shopping.html">Shopping</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="contact.html">Contact</a>
+                        <a class="nav-link" href="contact.html">Contact</a>
                     </li>
                 </ul>
                 <div id="nav-basket" class="col-4">
                     <i class="bi bi-basket2-fill" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
                 </div>
 
-                <!------Modal---------->
                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                     aria-hidden="true">
                     <div class="modal-dialog">
@@ -62,7 +63,7 @@
                                     <div class="row">
                                         <div class="col-md-12">
                                             <div class="row g-3">
-                                                <div class="col-md-6 d-grid">
+                                                <div class="col-md-6 d-grid p-2">
                                                     <div class="modal-form-input">
                                                         <label for="quantity" class="form-label">Quantity</label>
                                                         <input type="number" class="form-control" id="quantity" min="1"
@@ -82,7 +83,7 @@
                                                     </div>
                                                 </div>
 
-                                                <div class="col-md-6 d-grid">
+                                                <div class="col-md-6 d-grid p-2">
                                                     <div class="modal-form-input">
                                                         <label for="email" class="form-label">Email</label>
                                                         <div class="input-group">
@@ -122,6 +123,7 @@
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </nav>
 
