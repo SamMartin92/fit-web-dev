@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // present the current year in footer
     document.getElementById("year").textContent = new Date().getFullYear();
 
+    //present user feedback for contact form submission
     if (homeContactForm) {
         homeContactForm.addEventListener("submit", (event) => {
             event.preventDefault();
@@ -26,21 +27,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // adds dashes to card number input
     cardNumberInput.addEventListener('input', function (e) {
-        let value = e.target.value.replace(/\D/g, ''); // Remove all non-digit characters
-        value = value.match(/.{1,4}/g)?.join('-') || ''; // Group every 4 digits with a dash
+        let value = e.target.value.replace(/\D/g, ''); 
+        value = value.match(/.{1,4}/g)?.join('-') || ''; 
 
         e.target.value = value;
     });
 
 
-
-    unitPrice.addEventListener('input', getTotalPrice);
-    quantityInput.addEventListener('input', getTotalPrice);
-    purchaseForm.addEventListener('submit', submitPurchaseForm);
-
-
-
-
+    //total price functionality on purchase form 
     function getTotalPrice() {
         let totalPrice = document.querySelector("#totalPrice");
 
@@ -49,6 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
+    //purchase form validation & feedback
     function submitPurchaseForm() {
 
         modalBody.innerHTML =   `<div class="d-flex align-items-center flex-column">
@@ -70,4 +65,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 `
         }, 3000)
     }
+
+    //add EventListeners
+    
+    unitPrice.addEventListener('input', getTotalPrice);
+    quantityInput.addEventListener('input', getTotalPrice);
+    purchaseForm.addEventListener('submit', submitPurchaseForm);
 });
