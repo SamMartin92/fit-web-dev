@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // adds dashes to card number input
+    // adds dashes to card number input as user inputs
     cardNumberInput.addEventListener('input', function (e) {
         let value = e.target.value.replace(/\D/g, ''); 
         value = value.match(/.{1,4}/g)?.join('-') || ''; 
